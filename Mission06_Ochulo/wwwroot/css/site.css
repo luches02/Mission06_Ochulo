@@ -1,0 +1,29 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+.circular-image {
+    width: 100px; /* Set the width to your preference */
+    height: 100px; /* Set the height to the same as the width for a perfect circle */
+    border-radius: 50%; /* This creates the circular shape */
+    margin: 5px; /* This adds some space between your images */
+    object-fit: cover; /* This will cover the content to fit the container without stretching */
+}
