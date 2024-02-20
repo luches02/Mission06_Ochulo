@@ -5,7 +5,7 @@
 namespace Mission06_Ochulo.Migrations
 {
     /// <inheritdoc />
-    public partial class Initial : Migration
+    public partial class take4 : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -21,9 +21,9 @@ namespace Mission06_Ochulo.Migrations
                     Year = table.Column<string>(type: "TEXT", nullable: false),
                     Director = table.Column<string>(type: "TEXT", nullable: false),
                     Rating = table.Column<string>(type: "TEXT", nullable: false),
-                    Edited = table.Column<bool>(type: "INTEGER", nullable: false),
-                    LentTo = table.Column<string>(type: "TEXT", nullable: false),
-                    Notes = table.Column<string>(type: "TEXT", maxLength: 25, nullable: false)
+                    Edited = table.Column<bool>(type: "INTEGER", nullable: true),
+                    LentTo = table.Column<string>(type: "TEXT", nullable: true),
+                    Notes = table.Column<string>(type: "TEXT", maxLength: 25, nullable: true)
                 },
                 constraints: table =>
                 {
